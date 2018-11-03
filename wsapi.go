@@ -643,20 +643,17 @@ func (s *Session) ChannelVoiceJoin(gID, cID string, mute, deaf bool) (voice *Voi
 //    cID     : Channel ID of the channel to join.
 //    mute    : If true, you will be set to muted upon joining.
 //    deaf    : If true, you will be set to deafened upon joining.
-func (s *Session) ChannelVoiceJoinManual(gID, cID string, mute, deaf bool) (err error) {
+func (s *Session) ChannelVoiceJoinManual(gID string, cID string, mute, deaf bool) (err error) {
 
 	s.log(LogInformational, "called")
 
-	var ccc *string
+	data := voiceChannelJoinOp{4, voiceChannelJoinData{&gID, &cID, mute, deaf}}
 
 	if cID == "" {
-		ccc = nil
-	} else {
-		ccc = &cID
+		data.Data.ChannelID = nil
 	}
 
 	// Send the request to Discord that we want to join the voice channel
-	data := voiceChannelJoinOp{4, voiceChannelJoinData{&gID, ccc, mute, deaf}}
 	s.wsMutex.Lock()
 	err = s.wsConn.WriteJSON(data)
 	s.wsMutex.Unlock()
