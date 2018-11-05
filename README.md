@@ -1,6 +1,7 @@
 # DiscordGo
 
 [![GoDoc](https://godoc.org/github.com/bwmarrin/discordgo?status.svg)](https://godoc.org/github.com/bwmarrin/discordgo) [![Go report](http://goreportcard.com/badge/bwmarrin/discordgo)](http://goreportcard.com/report/bwmarrin/discordgo) [![Build Status](https://travis-ci.org/bwmarrin/discordgo.svg?branch=master)](https://travis-ci.org/bwmarrin/discordgo) [![Discord Gophers](https://img.shields.io/badge/Discord%20Gophers-%23discordgo-blue.svg)](https://discord.gg/0f1SbxBZjYoCtNPP) [![Discord API](https://img.shields.io/badge/Discord%20API-%23go_discordgo-blue.svg)](https://discord.gg/0SBTUU1wZTWT6sqd)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fsoowan%2Fdiscordgo.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fsoowan%2Fdiscordgo?ref=badge_shield)
 
 <img align="right" src="http://bwmarrin.github.io/discordgo/img/discordgo.png">
 
@@ -128,3 +129,7 @@ comparison and list of other Discord API libraries.
 ## Special Thanks
 
 [Chris Rhodes](https://github.com/iopred) - For the DiscordGo logo and tons of PRs.
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fsoowan%2Fdiscordgo.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fsoowan%2Fdiscordgo?ref=badge_large)
